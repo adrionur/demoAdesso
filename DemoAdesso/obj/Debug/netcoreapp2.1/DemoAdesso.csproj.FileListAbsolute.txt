@@ -1,0 +1,17 @@
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.deps.json
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.runtimeconfig.json
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.runtimeconfig.dev.json
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.dll
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.pdb
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.DAL.dll
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\bin\Debug\netcoreapp2.1\DemoAdesso.DAL.pdb
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.csprojAssemblyReference.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.csproj.CoreCompileInputs.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.RazorAssemblyInfo.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.RazorAssemblyInfo.cs
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.AssemblyInfoInputs.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.AssemblyInfo.cs
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.RazorTargetAssemblyInfo.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.csproj.CopyComplete
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.dll
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso\obj\Debug\netcoreapp2.1\DemoAdesso.pdb

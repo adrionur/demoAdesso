@@ -9,17 +9,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DemoAdesso.Controllers
 {
-    [Route("rest/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class AdessoRideShare : ControllerBase
+    public class AdessoRideShareController : ControllerBase
     {
-        private Repository repository;
-        public AdessoRideShare(Repository repository)
-        {
-            this.repository = repository;
-        }
+        private static Repository repository = new Repository();
+        //public AdessoRideShareController()
+        //{
 
-        [HttpGet()]
+        //}
+
+        [HttpGet]
         public List<TripPlan> GetAll()
         {
             return (List<TripPlan>)repository.GetAll();
@@ -27,9 +27,15 @@ namespace DemoAdesso.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public TripPlan Get(int id)
+        public TripPlan GetById(int id)
         {
             return (TripPlan)repository.GetById(id);
+        }
+
+        [HttpGet("{from}/{to}")]
+        public List<TripPlan> GetByParams(string from, string to)
+        {
+            return null;
         }
 
         // POST api/values
@@ -47,19 +53,21 @@ namespace DemoAdesso.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
+        [Consumes("application/json")]
         public string Put([FromBody] TripPlan model)
         {
             var tripPlan = (TripPlan)repository.GetById(model.Id);
-            if(tripPlan.HasEmptySpot())
+            if (tripPlan.HasEmptySpot())
             {
                 tripPlan.SeatsTaken++;
-                repository.Update(model);
+                repository.Update(tripPlan);
             }
             return Constants.SUCCESSUPDATE;
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [Consumes("application/json")]
         public string Delete(int id)
         {
             repository.Remove(id);

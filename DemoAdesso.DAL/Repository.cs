@@ -41,7 +41,7 @@ namespace DemoAdesso.DAL
             IEnumerable<object> trips;
             using (var db = new TripContext())
             {
-                trips = db.TripPlans;
+                trips = db.TripPlans.ToList();
             }
             return trips;
         }
