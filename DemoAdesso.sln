@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAdesso", "DemoAdesso\DemoAdesso.csproj", "{A33D6CBB-BA2D-47A8-9ACC-6D8E049A0A49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAdesso.DAL", "DemoAdesso.DAL\DemoAdesso.DAL.csproj", "{D2A2EEAA-0C17-4905-86D1-10B38E5A02AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A33D6CBB-BA2D-47A8-9ACC-6D8E049A0A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33D6CBB-BA2D-47A8-9ACC-6D8E049A0A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33D6CBB-BA2D-47A8-9ACC-6D8E049A0A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A2EEAA-0C17-4905-86D1-10B38E5A02AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A2EEAA-0C17-4905-86D1-10B38E5A02AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A2EEAA-0C17-4905-86D1-10B38E5A02AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A2EEAA-0C17-4905-86D1-10B38E5A02AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

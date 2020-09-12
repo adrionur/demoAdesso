@@ -1,0 +1,8 @@
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\bin\Debug\netcoreapp2.1\DemoAdesso.DAL.deps.json
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\bin\Debug\netcoreapp2.1\DemoAdesso.DAL.dll
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\bin\Debug\netcoreapp2.1\DemoAdesso.DAL.pdb
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\obj\Debug\netcoreapp2.1\DemoAdesso.DAL.csproj.CoreCompileInputs.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\obj\Debug\netcoreapp2.1\DemoAdesso.DAL.AssemblyInfoInputs.cache
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\obj\Debug\netcoreapp2.1\DemoAdesso.DAL.AssemblyInfo.cs
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\obj\Debug\netcoreapp2.1\DemoAdesso.DAL.dll
+C:\Users\adrio\source\repos\DemoAdesso\DemoAdesso.DAL\obj\Debug\netcoreapp2.1\DemoAdesso.DAL.pdb
