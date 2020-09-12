@@ -8,7 +8,7 @@ namespace DemoAdesso.DAL
         IEnumerable<object> GetAll();
         object GetById(int id);
         void Update(object obj);
-        void Remove(object obj);
+        void Remove(int id);
         void Add(object obj);
     }
 }

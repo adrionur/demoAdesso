@@ -12,8 +12,16 @@ namespace DemoAdesso.DAL
         {
             using (var db = new TripContext())
             {
-                db.Add((TripPlan)obj);
-                db.SaveChanges();
+                try
+                {
+                    db.Add((TripPlan)obj);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    throw;
+                }
+
             }
         }
 
@@ -22,7 +30,7 @@ namespace DemoAdesso.DAL
             object trip = null;
             using (var db = new TripContext())
             {
-                trip = db.TripPlans.OrderBy(x => x.Id == id).First();
+                trip = db.TripPlans.Where(x => x.Id == id).FirstOrDefault();
             }
             return trip;
         }
@@ -31,8 +39,15 @@ namespace DemoAdesso.DAL
         {
             using (var db = new TripContext())
             {
-                db.TripPlans.Add((TripPlan)obj);
-                db.SaveChanges();
+                try
+                {
+                    db.TripPlans.Add((TripPlan)obj);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    throw;
+                }
             }
         }
 
@@ -41,17 +56,32 @@ namespace DemoAdesso.DAL
             IEnumerable<object> trips;
             using (var db = new TripContext())
             {
-                trips = db.TripPlans.ToList();
+                try
+                {
+                    trips = db.TripPlans.ToList();
+                }
+                catch
+                {
+                    trips = new List<object>();
+                }
             }
             return trips;
         }
 
-        public void Remove(object obj)
+        public void Remove(int id)
         {
+            var entity = GetById(id);
             using (var db = new TripContext())
             {
-                db.TripPlans.Remove((TripPlan)obj);
-                db.SaveChanges();
+                try
+                {
+                    db.TripPlans.Remove((TripPlan)entity);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    throw;
+                }
             }
         }
     }

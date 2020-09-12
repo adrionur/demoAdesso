@@ -10,6 +10,6 @@ namespace DemoAdesso
         public static string ErrorCodeAlreadyAdded = "This trip plan is already added.";
         public static string SUCCESSINSERT = "Trip created.";
         public static string SUCCESSUPDATE = "Trip updated.";
-        public static string SUCCESEREMOVE = "Trip updated.";
+        public static string SUCCESEREMOVE = "Trip deleted.";
     }
 }

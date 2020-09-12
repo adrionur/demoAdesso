@@ -14,31 +14,27 @@ namespace DemoAdesso.Controllers
     public class AdessoRideShareController : ControllerBase
     {
         private static Repository repository = new Repository();
-        //public AdessoRideShareController()
-        //{
-
-        //}
 
         [HttpGet]
-        public List<TripPlan> GetAll()
+        public IActionResult GetAll()
         {
-            return (List<TripPlan>)repository.GetAll();
+            return Ok((List<TripPlan>)repository.GetAll());
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
-        public TripPlan GetById(int id)
+        public IActionResult GetById(int id)
         {
-            return (TripPlan)repository.GetById(id);
+            return Ok((TripPlan)repository.GetById(id));
         }
 
         [HttpGet("{from}/{to}")]
-        public List<TripPlan> GetByParams(string from, string to)
+        public IActionResult GetByParams(string from, string to)
         {
-            return null;
+            var list = (List<TripPlan>)repository.GetAll();
+            var newList = PathFinder.FilterList(from, to, list);
+            return Ok(newList);
         }
 
-        // POST api/values
         [HttpPost]
         [Consumes("application/json")]
         public string AddNewTrip([FromBody] TripPlan model)
@@ -51,7 +47,6 @@ namespace DemoAdesso.Controllers
             return Constants.SUCCESSINSERT;
         }
 
-        // PUT api/values/5
         [HttpPut("{id}")]
         [Consumes("application/json")]
         public string Put([FromBody] TripPlan model)
